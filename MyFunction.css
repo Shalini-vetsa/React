@@ -1,0 +1,65 @@
+.hello{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: justify;
+    border-radius: 50%;
+    transition: all 1s linear 2s;
+}
+
+.circle:hover{
+    background-color: red;
+}
+
+.e1{
+    width: 10px;
+    height: 30px;
+    border: 2px solid black;
+    position: relative;
+    top: -50px;
+    transition: all 1s linear 2s;
+    border-radius: 50%;
+}
+
+.e2{
+    width: 10px;
+    height: 30px;
+    border: 2px solid black;
+    position: relative;
+    top: -50px;
+    left: 130px;
+    transition: all .2s linear 2s;
+    border-radius: 50%;
+}
+
+.circle:hover .e1, .circle:hover .e2 {
+    border-radius: 0%;
+}
+
+
+.demo{
+    width: 100px;
+    height: 50px;
+    border: 2px solid black;
+    position: relative;
+    top: 40px;
+    transition: all 1s linear 2s;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.circle:hover .demo{
+    height: 10px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
